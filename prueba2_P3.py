@@ -1,17 +1,21 @@
-capitales = {
-
-    "Berlin": "Alemania",
-    "Paris": "Francia",
-    "Roma": "Italia",
-    "Moscu": "Rusia",
-    "Tokio": "Japon"
-
-}
-
+capitales = {}
 personas = {}
+cont = 0
+
+while True:
+    
+    capital = input("Ingrese ciudad capital: ")
+    pais = input("Ingrese país: ")
+    print()
+    capitales[capital] = pais
+    cont = cont + 1
+
+    if cont >= 5:
+        break
 
 while True:
 
+    print()
     nombre = input("Ingrese nombre del turista: ")
     capital = input("Ingrese capital de procedencia: ")
 
